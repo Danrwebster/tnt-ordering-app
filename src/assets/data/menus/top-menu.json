@@ -1,0 +1,23 @@
+[
+    {
+        "descriptor": {
+            "title": "Drinks Menu",
+            "id": "1"
+        },
+        "imageURL": "../../../assets/images/drinks-category-bg.png"
+    },
+    {
+        "descriptor": {
+            "title": "Food Menu",
+            "id": "2"
+        },
+        "imageURL": "../../../assets/images/food-category-bg.png"
+    },
+    {
+        "descriptor": {
+            "title": "Hangover Breakfast",
+            "id": "3"
+        },
+        "imageURL": ""
+    }
+]
