@@ -47,13 +47,13 @@ const routes: Routes = [
 		path: 'tab',
 		component: TabPageComponent,
 		data: { title: 'Tab' },
-		canActivate: [AuthGuard, ModalGuard] // Guest Access Allowed
+		canActivate: [ModalGuard] // Guest Access Allowed
 	},
 	{
 		path: 'service',
 		component: RequestServicePageComponent,
 		data: { title: 'Request Service' },
-		canActivate: [AuthGuard, ModalGuard] // Guest Access Allowed
+		canActivate: [ModalGuard] // Guest Access Allowed
 	},
 	// {
 	// 	path: 'help',
@@ -65,7 +65,7 @@ const routes: Routes = [
 		path: 'about',
 		component: AboutPageComponent,
 		data: { title: 'About' },
-		canActivate: [AuthGuard, ModalGuard] // Guest Access Allowed
+		canActivate: [ModalGuard] // Guest Access Allowed
 	},
 	{
 		path: 'topMenu',
@@ -75,7 +75,7 @@ const routes: Routes = [
 		resolve: {
 			topMenu: TopMenuResolver
 		},
-		canActivate: [AuthGuard, ModalGuard] // Guest Access Allowed
+		canActivate: [ModalGuard] // Guest Access Allowed
 	},
 	{
 		path: 'menu/:id',
@@ -85,7 +85,7 @@ const routes: Routes = [
 		resolve: {
 			menuCategories: MenuCategoryResolver
 		},
-		canActivate: [AuthGuard, ModalGuard] // Guest Access Allowed
+		canActivate: [ModalGuard] // Guest Access Allowed
 	},
 	{
 		path: 'myMobileMenu',

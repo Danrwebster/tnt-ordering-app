@@ -1,6 +1,6 @@
-# MyPersonalMenu
+# MyMobileMenu
 
-This is the code repository for the My Personal Menu Front-End Application.
+This is the code repository for the My Mobile Menu Front-End Application.
 
 ## Development Environment Setup
 1. Clone repository, and run `npm install` from the project root directory.

@@ -4,11 +4,11 @@
     </div>
     <div class="grid-container">
         <mat-grid-list cols="2" rowHeight="2:1" gutterSize="5px">
-            <mat-grid-tile color="accent" [colspan]="2" [rowspan]="1" class="menu-category"
+            <mat-grid-tile matRipple color="accent" [colspan]="2" [rowspan]="1" class="menu-category"
                 [routerLink]="'/myMobileMenu'">
                 My Mobile Menu
             </mat-grid-tile>
-            <mat-grid-tile *ngFor="let menu of menuList" color="accent" [colspan]="1" [rowspan]="1"
+            <mat-grid-tile *ngFor="let menu of menuList" matRipple color="accent" [colspan]="1" [rowspan]="1"
                 class="menu-category" [routerLink]="['/menu', menu.descriptor.id]"
                 [ngStyle]="{'background-image': imageURL(menu.imageURL)}">
                 {{menu.descriptor.title}}

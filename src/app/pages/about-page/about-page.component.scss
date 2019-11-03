@@ -19,6 +19,7 @@
         margin: 0 0 15px;
     }
 
+
     &::after {
         content: "";
         height: 100%;
@@ -45,4 +46,40 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+}
+
+p, li {
+    margin: 0;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-weight: normal;
+    color: $dark-text;
+}
+
+#text-container {
+    flex: 1 0 auto;
+    width: 776px;
+    margin: 0 auto;
+
+    @include breakpoint(tablet) {
+        width: auto;
+        margin: 0 15px;
+    }
+
+
+    h1 {
+        font-family: league-gothic, sans-serif;
+        font-size: 28px;
+        color: $secondary-accent;
+    }
+}
+
+img {
+    &.mmm-logo {
+        margin: 0 auto;
+        height: 200px;
+        width: 200px;
+        content: url("../../../assets/images/mmm_logo_offwhite_bg.png");
+    }
 }
